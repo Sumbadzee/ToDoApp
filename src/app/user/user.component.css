@@ -1,0 +1,102 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    min-height: 14vh;
+}
+
+button {
+    margin: 0 7.5px;
+    display: flex;
+    align-items: center;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 15px;
+    cursor: pointer;
+    width: 300px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #3700b3;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
+    transform: scale(1.05);
+}
+
+button img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+button span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    button {
+        width: 280px;
+        padding: 10px 14px;
+    }
+
+    button img {
+        width: 32px;
+        height: 32px;
+    }
+
+    button span {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    div {
+        min-height: auto;
+        margin: 0 0;
+        max-width: 300px;
+    }
+
+    button {
+        width: 220px;
+        padding: 10px 12px;
+        margin: 10px 0;
+    }
+
+    button img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    button span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    button {
+        width: 130px;
+        padding: 8px 10px;
+    }
+
+    button img {
+        width: 28px;
+        height: 28px;
+        margin-right: 6px;
+    }
+
+    button span {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,80 @@
+article {
+    padding: 1rem;
+    color: #25113d;
+    background-color: #bf9ee5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  time {
+    color: #3c2c50;
+  }
+  
+  .actions {
+    text-align: right;
+    margin: 0;
+  }
+  
+  .actions button {
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #380774;
+    color: #decdf2;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #4a0774;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  }
+
+@media (max-width: 768px) {
+  article {
+      padding: 0.8rem;
+  }
+
+  h2 {
+      font-size: 1rem;
+  }
+
+  time {
+      font-size: 0.9rem;
+  }
+
+  .actions {
+      text-align: center;
+  }
+
+  .actions button {
+      font-size: 0.85rem;
+      padding: 0.4rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+      padding: 0.6rem;
+  }
+
+  h2 {
+      font-size: 0.9rem;
+  }
+
+  time {
+      font-size: 0.85rem;
+  }
+
+  .actions button {
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+  }
+}
